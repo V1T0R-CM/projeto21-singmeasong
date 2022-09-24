@@ -158,7 +158,7 @@ describe('Testes unitários do recommentation service', () => {
         expect(promise).rejects.toEqual({ type: "not_found", message: "" });
     });
 
-    it('Deve retornar uma lista com as recomendações pelo score', async () => {
+    it('Deve retornar uma lista com as recomendações ordenadas pelo score', async () => {
         jest
             .spyOn(recommendationRepository, 'getAmountByScore')
             .mockImplementation((): any => []);

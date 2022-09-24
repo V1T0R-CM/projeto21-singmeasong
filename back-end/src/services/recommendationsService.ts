@@ -78,7 +78,6 @@ function getScoreFilter(random: number) {
   if (random < 0.7) {
     return "gt";
   }
-
   return "lte";
 }
 
