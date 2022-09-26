@@ -8,12 +8,11 @@ describe('Testa interações com as recomendações', () => {
 
     cy.get('#youtubeLink').type('https://www.youtube.com/watch?v=3ySIycyNkUY');
 
-    //cy.intercept('POST', 'http//localhost:5000/recommendations').as('insertRecommendation');
-    //cy.intercept('GET', 'http//localhost:5000/recommendations').as('getRecommendations');
-
+    cy.intercept('POST', 'http://localhost:5000/recommendations').as('insertRecommendation');
+    cy.intercept('GET', 'http://localhost:5000/recommendations').as('getRecommendations');
     cy.get('#submit').click();
 
-    //cy.wait('@insertRecommendation');
-    //cy.wait('@getRecommendations');
+    cy.wait('@insertRecommendation');
+    cy.wait('@getRecommendations');
   })
 })
