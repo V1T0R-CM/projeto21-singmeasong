@@ -35,23 +35,22 @@ Primeiro, faça o clone desse repositório na sua maquina:
 git clone https://github.com/V1T0R-CM/projeto21-singmeasong.git
 ```
 
-Depois, dentro da pasta, rode o seguinte comando para instalar as dependencias, na pasta front-end, e na pasta back-end.
-
+Depois, dentro da pasta, rode o seguinte comando para instalar as dependencias, na pasta front-end, e na pasta back-end:
 ```
 npm install
 ```
-Depois, para inicializar o banco de dados, utilize o seguinte comando dentro da pasta back-end
+Depois, para inicializar o banco de dados, utilize o seguinte comando dentro da pasta back-end:
 
 ```
 npx prisma migrate dev
 ```
 
-Finalizado o processo, é só inicializar o servidor front-end com
+Finalizado o processo, é só inicializar o servidor front-end com:
 ```
 npm start
 ```
 
-E do back-end com
+E do back-end com:
 ```
 npm run dev
 ```
