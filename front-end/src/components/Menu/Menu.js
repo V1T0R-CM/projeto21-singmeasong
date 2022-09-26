@@ -11,17 +11,17 @@ export default function Menu() {
   return (
     <StyledMenu>
       <MenuItem onClick={() => navigate("/")}>
-        <FaHome />
+        <FaHome id='home' />
         Home
       </MenuItem>
 
       <MenuItem onClick={() => navigate("/top")}>
-        <HiTrendingUp />
+        <HiTrendingUp id='top' />
         Top
       </MenuItem>
 
       <MenuItem onClick={() => navigate("/random")}>
-        <FiShuffle />
+        <FiShuffle id='random' />
         Random
       </MenuItem>
     </StyledMenu>
